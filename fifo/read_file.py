@@ -4,7 +4,8 @@ def readFromFile():
     '''Retrieve the content from a text file'''
     fin = open('my_log.txt', 'rt') # 'rt' will read text
     with fin:
-        r = fin.read() # read the entire contents of the file
+        # r = fin.read() # read the entire contents of the file
+        r = fin.readlines() # read the entire contents of the file into a list of strings
     return r
 
 if __name__ == '__main__':
