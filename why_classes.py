@@ -18,10 +18,10 @@ gail = {'name':'Gail', 'age':42, 'email':'gail@hmrc.gov.uk'}
 # here is a class
 class Person:
     # we may choose to pass in data we wish to persist
-    # __slots__ = ['__name' ] #, '__age', '__email'] # we restrict the permitted properties of this class
+    __slots__ = ['__name' , '__age', '__email'] # we restrict the permitted properties of this class
     def __init__(self, name, age, email): # 'self' must appear in class methods
         self.name  = name # we attach the incoming arguments to 'self'
-        self.age   = age
+        self.age   = age  # NB this calls the setter function
         self.email = email
     # property decorators, name mangling and __slots__
     @property # the get-method (the accessor)
@@ -33,7 +33,7 @@ class Person:
         if type(new_name) == str and new_name != '':
             self.__name = new_name # mangled properties cannot be accessed outside the class
         else:
-            raise TypeError # this will cause an exception
+            raise TypeError('Name must be a non empty string') # this will cause an exception
     @property
     def age(self):
         return self.__age
@@ -52,7 +52,9 @@ class Person:
     def email(self, new_email):
         ''' email must be non-empty string'''
         if type(new_email) == str and new_email !='':
-            raise TypeError()
+            self.__email = new_email
+        else:  
+            raise TypeError('Email must be a non-empty string')
 
 # we can execise the code
 if __name__ == '__main__':
@@ -66,3 +68,19 @@ if __name__ == '__main__':
     # we can also mutate the age
     g.age = -99 # this should use the default of 24
     print(g.age) # 24
+    # play with the email
+    g.email = 'galena@hmrc.gov.uk'
+    print(g.email)
+
+    # we often need to handle exceptions
+    try:
+        g.__name = 'Gertrude' # this should fail
+        g.name = 55 # this should raise our TypeError
+    except TypeError as te:
+        print(te)
+    except AttributeError as ae:
+        print(ae)
+    except Exception as err: # we always handle general exceptions last
+        print('Something unexpected has gone wrong')
+    finally:
+        print('this code runs even if there is an exception')
