@@ -55,6 +55,13 @@ class Person:
             self.__email = new_email
         else:  
             raise TypeError('Email must be a non-empty string')
+    # some other class methods (just normal function)
+    def birthday(self):
+        '''increment the age by 1'''
+        self.age += 1 # += will increment by a value. Also -=
+    def __str__(self): # anything __nnn__ is built in to Python. Called 'dunder'
+        '''we override the __str__ method to print how we choose'''
+        return f'{self.name} is aged {self.age} contact {self.email}'    
 
 # we can execise the code
 if __name__ == '__main__':
@@ -84,3 +91,9 @@ if __name__ == '__main__':
         print('Something unexpected has gone wrong')
     finally:
         print('this code runs even if there is an exception')
+
+    # use the birthday function
+    g.birthday() # we invoke a function with ()
+    print(f'Age is {g.age}') # 25
+
+    print(g) # we get our class

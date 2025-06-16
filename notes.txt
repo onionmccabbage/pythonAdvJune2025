@@ -12,30 +12,28 @@ Toby Dussek
  5:00 end
 
 Monday
-- intro and welcome
+> intro and welcome
   - what do you currently know
   - what do you want to know 
 - abstract and concrete classes
 - class inheritance
-- using slots
-- name mangled members
-- property decorators
+> using slots
+> name mangled members
+> property decorators
 - validate data types: isinstance, type, int(float())
-- override built-in methods: __str__, __eq__, __repr__
-- if __name__== '__main__'
+> override built-in methods
+> if __name__== '__main__'
 - after lunch review
-- functional programming: map, filter and reduce  
+- functional programming 
 - function parameters: args, kwargs
 - all my code will be here:
   https://github.com/onionmccabbage/pythonAdvJune2025
 
 Tuesday
-- Loading local and remote data (requests)
-- we will be using the 'requests' library for API calls
-- processing text/json
-- persisting files: read/write/append/exclusive/overwrite, text, bytes, json
+> Loading local and remote data (requests)
+> we will be using the 'requests' library for API calls
+- persisting files: read/write/append/overwrite
 - 'with' operator for clean handling of assets
-- how to convert bytes back to string b'this is bytes'.decode()
 - databases
     see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
@@ -48,37 +46,16 @@ Tuesday
 
 Wednesday
 - comprehensions, generators and yield
-- redirect stdout
-- context manager to switch context e.g. for handling data input and output
-- decorator syntax
 - networking server/client (microservices)
 - immediate mode Python
-  - any results are immediately show using __repr__ 
 - Testing: (only really works if there is a good spec')
   - doctest 
   see https://docs.python.org/3/library/doctest.html
   - unittest
   - pytest see https://docs.pytest.org/
 - after lunch lab exercise
-- Flask is a lightweight web server
-
-Thursday
 - profiling: timings etc. (cprofile)
 - multithreading, also limits of mutlithreading concurrency
-  - class and function threads
-  - how threads are done
-  - concurrency and resources (lock shared resources)
-  - async await
-  in Python we do not get true parallelism ...
-- the global Interpreter Lock (GIL) will affect threading performance
-  the classic cpython will be stymied by the GIL
-  jython (implements python 2) (Java) an ironpython (.NET) are NOT limited in this way
-  ipython is interactive python (often seen in Jupyter etc.)
-- which Python... NB 3.13 contains an optional GIL (cpython)
-  see https://peps.python.org/pep-0703/
-- using thread locks
-- Python has -O to optimize code (especially useful for threading and large code-base)
-  -O will attempt to optimize the code especially good for threading
 - after lunch review
 
 Other Useful Resources
