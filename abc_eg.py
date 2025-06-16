@@ -9,6 +9,17 @@ class MyAbsctract(abc.ABCMeta):
 class MyConcrete(MyAbsctract):
     '''Here we write the actual class'''
 
+
+
+
+
+
+
+
+
+
+
+
 from abc import ABCMeta, abstractmethod
 
 class AbstractShape(metaclass=ABCMeta): # we now have an abstract class
@@ -25,5 +36,3 @@ class AbstractShape(metaclass=ABCMeta): # we now have an abstract class
         We may oerride __str__ to implement our own print routine'''
         pass
 
-if __name__ == '__main__':
-    s = Shape()

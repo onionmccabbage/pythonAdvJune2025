@@ -2,7 +2,7 @@ from abc_eg import AbstractShape
 
 class Shape(AbstractShape):
     '''This shape will have a number of sides'''
-    __slots__ = ('__num_sides','__colour')
+    # __slots__ = ('__num_sides','__colour')
     def __init__(self, num_sides, colour):
         '''This method is called every time we create an instance'''
         self.num_sides = num_sides # here we are calling the setter methods of this class
