@@ -15,26 +15,27 @@ Monday
 > intro and welcome
   - what do you currently know
   - what do you want to know 
-- abstract and concrete classes
-- class inheritance
+> abstract and concrete classes
+> class inheritance
 > using slots
 > name mangled members
 > property decorators
-- validate data types: isinstance, type, int(float())
+> validate data types: isinstance, type, int(float())
 > override built-in methods
 > if __name__== '__main__'
-- random, input, while and break
-- after lunch review
+> random, input, while and break
+> after lunch review
 - functional programming 
 - function parameters: args, kwargs
 - all my code will be here:
   https://github.com/onionmccabbage/pythonAdvJune2025
 
 Tuesday
+- quick review what we did
 > Loading local and remote data (requests)
 > we will be using the 'requests' library for API calls
-- persisting files: read/write/append/overwrite
-- 'with' operator for clean handling of assets
+> persisting files: read/write/append/overwrite
+> 'with' operator for clean handling of assets
 - databases
     see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
@@ -48,6 +49,7 @@ Tuesday
 Wednesday
 - comprehensions, generators and yield
 - networking server/client (microservices)
+q - Django CMS Flask
 - immediate mode Python
 - Testing: (only really works if there is a good spec')
   - doctest 
