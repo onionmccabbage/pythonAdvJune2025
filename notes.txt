@@ -60,5 +60,6 @@ Wednesday
 - after lunch review
 
 Other Useful Resources
+- https://peps.python.org/pep-0008/
 - https://pynative.com/python-exercises-with-solutions/
 - https://realpython.com/
