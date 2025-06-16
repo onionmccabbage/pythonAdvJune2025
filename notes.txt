@@ -23,6 +23,7 @@ Monday
 - validate data types: isinstance, type, int(float())
 > override built-in methods
 > if __name__== '__main__'
+- random, input, while and break
 - after lunch review
 - functional programming 
 - function parameters: args, kwargs

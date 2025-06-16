@@ -1,0 +1,19 @@
+Review 1 
+========
+Ask the user to enter a guess, until they guess correctly 
+(Guess an integer between 0 and 100)
+
+If it's too high or too low tell them
+When they get it right the game ends
+(Remember to validate that an integer was entered) 
+
+Optional
+--------
+entering -1 quits the game (tell them the answer)
+entering -2 offers hints: is it even, is it odd, is it a prime number or is it a square?
+here is a tuple of primes
+primes_t = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97)
+
+Count how many guesses they took, and print this at the end
+
+Use documentation, look online, ask me, ask each other...
