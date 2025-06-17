@@ -6,8 +6,10 @@ def readDB():
     '''Retrieve values from the zoo table'''
     conn = sqlite3.connect('my_db')
     curs = conn.cursor()
+    # using SELECT * retrieves every column in the natural order of the DB
+    # instead we may choose which columns to read, and in what order
     st   = '''
-    SELECT *
+    SELECT creature, count, cost
     FROM zoo
     '''
     try:
