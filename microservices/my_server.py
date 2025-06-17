@@ -19,6 +19,11 @@ def server():
         # now we can begin to read whatever the client sent in the request
         buf = client.recv(1024) # choose to receive just the first bytes of the request
         print(f'Server received {buf}')
+        if buf == b'quit': # b means we are expecting a byte-string
+            # close our server
+            server.close()
+            client.close()
+            break # this will break out of the run loop
 
 
 

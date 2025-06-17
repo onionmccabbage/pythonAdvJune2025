@@ -51,7 +51,7 @@ Tuesday
 Wednesday
 > comprehensions, generators
 - and yield
-- networking server/client (microservices)
+> networking server/client (microservices)
 q - Django CMS Flask
 > immediate mode Python
 > Testing: (only really works if there is a good spec')
