@@ -25,13 +25,14 @@ Monday
 > if __name__== '__main__'
 > random, input, while and break
 > after lunch review
-- functional programming 
-- function parameters: args, kwargs
+> functional programming 
+> function parameters: args, kwargs
 - all my code will be here:
   https://github.com/onionmccabbage/pythonAdvJune2025
 
 Tuesday
 - quick review what we did
+> try-except
 > Loading local and remote data (requests)
 > we will be using the 'requests' library for API calls
 > persisting files: read/write/append/overwrite
@@ -63,5 +64,6 @@ q - Django CMS Flask
 
 Other Useful Resources
 - https://peps.python.org/pep-0008/
+- https://learnpython.org/
 - https://pynative.com/python-exercises-with-solutions/
 - https://realpython.com/
