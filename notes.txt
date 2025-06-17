@@ -40,6 +40,7 @@ Tuesday
 - databases
     see https://wiki.python.org/moin/DatabaseProgramming
   also useful: add 'sqlite viewer' plugin to VSCode
+  https://www.w3schools.com/sql/
 - other db connections
 - Create, Read and Update (and Delete) - CRUD operations
 - populate db with sample data
