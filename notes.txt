@@ -49,7 +49,8 @@ Tuesday
 - after lunch review exercise
 
 Wednesday
-- comprehensions, generators and yield
+> comprehensions, generators
+- and yield
 - networking server/client (microservices)
 q - Django CMS Flask
 - immediate mode Python
