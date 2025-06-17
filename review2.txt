@@ -1,0 +1,39 @@
+Advanced Python Review 2
+========================
+This is an opportunity to work with a database and remote API
+
+In a new package, write a module to implement a database table for 'posts'
+Use the following API to grab a very large number of 'posts':
+  https://jsonplaceholder.typicode.com/posts
+Iterate over these posts to put each one into the database table
+
+Details:
+Write a module which will add a new table to your existing database 
+(you only need to run this once)
+Decide on a name for your table, such as 'posts'
+This new table needs columns for 'id' 'userId' 'title' and 'body'
+(id should be the primary key)
+Decide on suitable SQL data types for these fields (e.g. VARCHAR(256) for 'body')
+
+Write a module which will read the JSON data for all the 'posts' from the API
+Then iterate over the retrieved data to populate your new table
+
+In another module, ask the user which userId they are interested in 
+Then retrieve and display all the 'posts' for that userId (use a 'WHERE' clause in the SQL)
+(You will need to validate that the userId is a positive integer within bounds)
+CAREFUL - userId is a number, so don't use quotes in the SQL statement
+
+Architecture:
+Use functions, classes and/or modules as you see fit
+Your code code should encapslate neat ways to:
+- create a new (valid) 'post' item
+- update existing 'post' items, e.g. changing the value of 'title' or 'body'
+
+Optional:
+Populate a new database table with the 'todos' from https://jsonplaceholder.typicode.com/todos
+Find ways to re-use existing code
+Find a way to show only 'completed' todo items for a given userId
+Show all todos AND posts for a given userId
+Find all the incomplete todos and set them to completed
+Consider how you could make a utility module to reset the database to a 'known-good' state
+
