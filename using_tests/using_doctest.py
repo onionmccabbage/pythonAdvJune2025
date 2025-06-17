@@ -8,6 +8,8 @@ def cubes(x):
     >>> cubes(3)
     27
     >>> cubes('3')
+    Traceback (most recent call last):
+        ...
     TypeError: x must be numeric
     '''
     if type(x) in (int, float):
