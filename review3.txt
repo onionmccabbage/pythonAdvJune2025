@@ -9,6 +9,7 @@ Write a 'Weather' class with get/set methods for 'city' and 'description'
 The class should validate
   - the value of 'city' is a non-empty string of three or more characters
   - if city is missing or unacceptable, you should provide a sensible default (e.g. 'London')
+  - description needs to be non empty string
 In this class override __str__ so it prints nicely, something like
   'The weather in London is rainy'
 
