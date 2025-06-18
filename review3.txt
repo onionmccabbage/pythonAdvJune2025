@@ -1,4 +1,4 @@
-Review 3
+Review 3 until at least 3:15 (1hr 15mins)
 ========
 - Alter these instructions to suit your thinking
 - Aim for good architecture (maybe use separate modules, remember 'if __name__...')
