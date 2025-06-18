@@ -61,9 +61,9 @@ q - Django CMS Flask
   see https://docs.python.org/3/library/doctest.html
   > unittest
 - profiling: timings etc. (cprofile)
-- multithreading, also limits of mutlithreading concurrency
-- there is a Global Interpreter Lock (GIL) which slightly impedes the efficiency of threads
-- what is daemon
+> multithreading, also limits of mutlithreading concurrency
+> there is a Global Interpreter Lock (GIL) which slightly impedes the efficiency of threads
+> what is daemon
 - after lunch review
 
 Other Useful Resources
