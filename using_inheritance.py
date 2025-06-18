@@ -7,7 +7,8 @@ class Parliamentarian():
 class MP(Parliamentarian):
     '''We will also encode which party'''
     def __init__(self, name, party):
-        Parliamentarian.__init__(name)
+        # if we choose to pas the Class specifically we must also pass 'self'
+        Parliamentarian.__init__(self, name)
         self.party = party
 
 class CivilServant(Parliamentarian):
