@@ -49,6 +49,8 @@ Tuesday
 > after lunch review exercise
 
 Wednesday
+- quick review of classes and inheritance
+- scope
 > comprehensions, generators
 - and yield
 > networking server/client (microservices)
