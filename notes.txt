@@ -54,17 +54,17 @@ Wednesday
 > comprehensions, generators
 - and yield
 > networking server/client (microservices)
-q - Django CMS Flask
+> Django CMS Flask  
 > immediate mode Python
 > Testing: (only really works if there is a good spec')
   > doctest 
   see https://docs.python.org/3/library/doctest.html
   > unittest
-- profiling: timings etc. (cprofile)
+> profiling: timings etc. (cprofile)
 > multithreading, also limits of mutlithreading concurrency
 > there is a Global Interpreter Lock (GIL) which slightly impedes the efficiency of threads
 > what is daemon
-- after lunch review
+> after lunch review
 
 Other Useful Resources
 - https://peps.python.org/pep-0008/

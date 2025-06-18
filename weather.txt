@@ -1,0 +1,5 @@
+The weather in Munich is few clouds at 27.83C
+The weather in London is clear sky at 28.05C
+The weather in Paris is clear sky at 28.04C
+The weather in Dublin is clear sky at 14.58C
+The weather in toronto is broken clouds at 24.69C
